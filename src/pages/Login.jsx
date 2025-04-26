@@ -19,33 +19,35 @@ const Login = () => {
 
         logInUser(email, password)
             .then(result => {
-                console.log('login', result.user)
+                // console.log('login', result.user)
                 navigate('/')
             })
             .catch(error => {
-                console.log(error)
+                // console.log(error)
             })
     }
 
     const handleLogInWithGoogle = () => {
         logInWithGoogle()
             .then(result => {
-                console.log(result.user)
+                // console.log(result.user)
+                navigate('/')
+                
             })
             .catch(error => {
-                console.log(error.message)
+                // console.log(error.message)
             })
     }
 
     return (
-        <div className="hero bg-base-200 min-h-screen dark:bg-gray-900 text-black dark:text-white">
+        <div className="hero  dark:bg-gray-900 min-h-screen">
             <div className="hero-content flex-col lg:flex-row-reverse">
                 <div className="text-center lg:text-left w-96">
                     <Lottie animationData={loginAnimationData}></Lottie>
                 </div>
-                <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-                    <h1 className="text-5xl font-bold ml-8 mt-4 text-center">Login</h1>
-                    <form onSubmit={handleLogin} className="card-body">
+                <div className="card bg-gray-100 dark:text-gray-800  w-full max-w-sm shrink-0 shadow-2xl">
+                    <h1 className="text-5xl font-bold ml-5 mt-4 text-center">Login</h1>
+                    <form onSubmit={handleLogin} className="card-body dark:text-red-400 text-white">
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Email</span>
