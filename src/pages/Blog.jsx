@@ -45,11 +45,11 @@ const Blog = () => {
                         <h2 className="text-2xl font-semibold text-gray-800 mb-4">
                             Expert Insights
                         </h2>
-                        <p className="text-gray-600 mb-4">
+                        <p className="text-gray-900 mb-4">
                             Our team of experts offers deep industry insights and strategies to ensure you're on the right path. We use data-driven methods to analyze your situation and provide clear recommendations that drive real results.
                         </p>
                         <motion.button
-                            className="bg-blue-500 text-white px-6 py-2 rounded-lg font-medium hover:bg-blue-600 transition-colors"
+                            className="bg-blue-300 text-white px-6 py-2 rounded-lg font-medium hover:bg-blue-600 transition-colors"
                             whileHover={{ scale: 1.05 }}
                         >
                             Read More

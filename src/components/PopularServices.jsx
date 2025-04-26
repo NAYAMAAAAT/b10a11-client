@@ -56,7 +56,7 @@ const PopularServices = () => {
             {/* Show All Button */}
             <div className="text-center mt-6">
                 <Link to="/all-services">
-                    <button className="px-6 py-2 bg-gray-700 text-white rounded-lg">Show All</button>
+                    <button className="px-6 py-2 bg-gray-600 text-white rounded-lg">Show All</button>
                 </Link>
             </div>
         </div>
